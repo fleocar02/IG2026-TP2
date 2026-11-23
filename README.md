@@ -1,4 +1,4 @@
-# Las Cinco
+# 🌈 Las Cinco
 Sitio homenaje de divulgación e investigación actual sobre el colectivo artístico sueco conformado por cinco mujeres artistas, liderado por Hilma af Klint a finales del siglo XIX y principios del XX.
 
 ## 👥 Sobre Nosotrxs
@@ -23,6 +23,7 @@ Somos estudiantes de la Licenciatura en Artes Multimediales de la UNA y presenta
 
 ---
 ## 📄 Documentacion del Proyecto
+Click [aquí](https://docs.google.com/document/d/11cmYmd3JgKK525waImPXYeYcwjLJ9krxWxP0wpn7aY4/edit?usp=sharing) para ir a la **Documentación del Proyecto**
 
 ---
 ## 📝 Etiquetas de Commits
