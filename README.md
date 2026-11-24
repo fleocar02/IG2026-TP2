@@ -7,7 +7,7 @@ Somos estudiantes de la Licenciatura en Artes Multimediales de la UNA y presenta
 - [Fernandez Rolon, Clara](https://github.com/clarafernandezr)
 - [Cárdenas, Fabrizio](https://github.com/fleocar02)
 
-`Aprovechamos para expresar nuestros saludos y agradecimientos a nuestros profesores: Valeria Drelichman, Pedro Paleo, Leonardo Nadel y Norma Morales.`
+`Enviamos agradecimientos a nuestros profesores: Valeria Drelichman, Pedro Paleo, Leonardo Nadel y Norma Morales.`
 
 ---
 ## 🔗 Enlace al Sitio
