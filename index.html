@@ -12,38 +12,47 @@
 </head>
 <body>
     <header class="barra-superior">
-        <nav class="menu-nav">
-            <ul>
-                <li>
-                    <a href="#">Inicio</a>
+        <!--Navbar responsive con Bootstrap-->
+        <nav class="navbar navbar-expand-lg">
+            <!--Lista de Items del Menú-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
                 </li>
-                <li>
-                    <button type="button">
+                <!--Listas dropdown-->
+                <li class="nav-item">
+                    <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button" aria-expanded="false">
                         Colectivo
                     </button>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
+                    <ul class="menu">
+                        <a class="menu-item" href="#">Perfil Biográfico de Las Cinco</a>
+                        <a class="menu-item" href="#">Misticismo, Esoterismo y Arte</a>
+                    </ul>
                 </li>
-                <li>
-                    <button type="button">
-                        Biografía
+                <li class="nav-item">
+                    <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button">
+                        Hilma af Klint
                     </button>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
+                    <ul class="menu">
+                        <a class="menu-item" href="#">Su obra</a>
+                        <a class="menu-item" href="#">El reconocimiento tardío</a>
+                    </ul>
                 </li>
-                <li>
-                    <button type="button">
+                <li class="nav-item">
+                    <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button">
                         Actualidad
                     </button>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
+                    <ul class="menu">
+                        <a class="menu-item" href="#">Las controversias</a>
+                        <a class="menu-item" href="#">Discusiones e Investigaciones actuales</a>
+                        <a class="menu-item" href="#">Galería</a>
+                    </ul>
                 </li>                
-                <li>
-                    <a href="#">Contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
                 </li>
-                <li>
-                    <a href="#">Créditos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Créditos</a>
                 </li>
             </ul>
         </nav>
@@ -59,9 +68,13 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </span>
         </div>
-
-        <button type="button">Ir a la Galería</button>
-
+        <div>
+            <h2>
+                Galería
+            </h2>
+            <hr>
+            <button type="button">Ir a la Galería</button>
+        </div>
         <article>
             <h2>
                 La referente
@@ -70,10 +83,14 @@
             <h3>
                 Hilma af Klint
             </h3>
-
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
         </article>
- 
     </main>
+    <footer>
+        <adress>UNA 2026 cat. Drelichman</adress>
+    </footer>
 
 </body>
 </html>
