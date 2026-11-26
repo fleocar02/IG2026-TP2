@@ -8,53 +8,62 @@
     <!--Bootstrap v6.0-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
 </head>
 <body>
-    <header class="barra-superior">
-        <!--Navbar responsive con Bootstrap-->
-        <nav class="navbar navbar-expand-lg">
-            <!--Lista de Items del Menú-->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <!--Listas dropdown-->
-                <li class="nav-item">
-                    <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button" aria-expanded="false">
-                        Colectivo
-                    </button>
-                    <ul class="menu">
-                        <a class="menu-item" href="#">Perfil Biográfico de Las Cinco</a>
-                        <a class="menu-item" href="#">Misticismo, Esoterismo y Arte</a>
+    <header class="barra-navegacion">
+            <!--Navbar responsive con Bootstrap-->
+            <nav class="navbar" aria-label="Barra de Navegación">
+            <div class="container-fluid px-3">
+                <!--Botón hamburguesa-->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-expanded="false" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Lista de Items del Menú-->
+                <div class="collapse navbar-collapse" id="menuNavegacion">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <!--Listas dropdown-->
+                        <li class="nav-item">
+                            <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button" aria-expanded="false">
+                                Colectivo
+                            </button>
+                            <ul class="menu">
+                                <a class="menu-item" href="#">Perfil Biográfico de Las Cinco</a>
+                                <a class="menu-item" href="#">Misticismo, Esoterismo y Arte</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button">
+                                Hilma af Klint
+                            </button>
+                            <ul class="menu">
+                                <a class="menu-item" href="#">Su obra</a>
+                                <a class="menu-item" href="#">El reconocimiento tardío</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button">
+                                Actualidad
+                            </button>
+                            <ul class="menu">
+                                <a class="menu-item" href="#">Las controversias</a>
+                                <a class="menu-item" href="#">Discusiones e Investigaciones actuales</a>
+                                <a class="menu-item" href="#">Galería</a>
+                            </ul>
+                        </li>                
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Créditos</a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button">
-                        Hilma af Klint
-                    </button>
-                    <ul class="menu">
-                        <a class="menu-item" href="#">Su obra</a>
-                        <a class="menu-item" href="#">El reconocimiento tardío</a>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button">
-                        Actualidad
-                    </button>
-                    <ul class="menu">
-                        <a class="menu-item" href="#">Las controversias</a>
-                        <a class="menu-item" href="#">Discusiones e Investigaciones actuales</a>
-                        <a class="menu-item" href="#">Galería</a>
-                    </ul>
-                </li>                
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Créditos</a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
