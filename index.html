@@ -16,16 +16,17 @@
             <nav class="navbar" aria-label="Barra de Navegación">
             <div class="container-fluid px-3">
                 <!--Botón hamburguesa-->
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-expanded="false" type="button">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!--Lista de Items del Menú-->
-                <div class="collapse navbar-collapse" id="menuNavegacion">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse w-100" id="menuNavegacion">
+                    <ul class="navbar-nav me-auto text-start">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Inicio</a>
                         </li>
+
                         <!--Listas dropdown-->
                         <li class="nav-item">
                             <button class="nav-link dropdown-toggle" data-bs-toggle="menu" type="button" aria-expanded="false">
