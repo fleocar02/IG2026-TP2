@@ -5,4 +5,33 @@
     --amarillo-claro: #fefaf4;
     --celeste: #3a7ab0;
     --rosa: #f04553;
+    --texto: #141414;
+
 }
+
+* {
+    box-sizing: border-box;
+}
+
+/* Mobile First */
+@media (min-width: 0){
+    
+    body {
+        background-color: var(--amarillo-claro);
+        color: var(--texto);
+    }
+
+    /* Barra de Navegacion */
+    .navbar {
+        background-color: var(--naranja);
+    }
+
+    .barra-navegacion .nav-link,
+    .barra-navegacion .dropdown-item {
+        color: var(--texto);
+    }
+
+}
+
+
+
