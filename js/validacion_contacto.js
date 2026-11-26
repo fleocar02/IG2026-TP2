@@ -63,6 +63,15 @@ formulario.addEventListener("submit", (evento) => {
         return;
     }
 
+    if (comentarios === "") {
+            evento.preventDefault();
+            if (campoComentarios) campoComentarios.classList.add("campo-error");
+            if (errorComentarios) errorComentarios.textContent = "El comentario es obligatorio.";
+            if (mensajeError) mensajeError.textContent = "Revisá el campo comentarios.";
+            if (campoComentarios) campoComentarios.focus();
+            return;
+        }
+
     //validación de comentarios (máximo de caracteres)
     if (comentarios.length > MAX_COMENTARIOS) {
         evento.preventDefault();
