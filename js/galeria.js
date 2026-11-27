@@ -73,13 +73,14 @@ function actualizarCaratulas() {
         const caratula = serie.obras.find((o) => o.id === serie.caratulaId) || serie.obras[0];
 
         const tarjeta = document.createElement("article");
+        tarjeta.className = "tarjeta-galeria";
         tarjeta.innerHTML = `
-      <button type="button" class="btn-abrir-serie">
-        <img src="${caratula.imagen}" alt="Carátula de ${serie.nombre}: ${caratula.titulo}"/>
-        <h2>${serie.nombre}</h2>
-        <p>${caratula.titulo} (${caratula.anio}) — ${serie.obras.length} obras</p>
-      </button>
-    `;
+          <button type="button" class="btn-abrir-serie">
+            <img src="${caratula.imagen}" alt="Carátula de ${serie.nombre}: ${caratula.titulo}" />
+            <h2 class="titulo-galeria">${serie.nombre}</h2>
+            <p class="texto-galeria">${caratula.titulo} (${caratula.anio}) — ${serie.obras.length} obras</p>
+          </button>
+        `;
 
         tarjeta.querySelector(".btn-abrir-serie").addEventListener("click", () => {
             abrirCarrusel(serie, 0);
@@ -95,20 +96,21 @@ function actualizarObras(serie) {
 
     serie.obras.forEach((obra, indice) => {
         const item = document.createElement("article");
+        item.className = "tarjeta-galeria";
         item.innerHTML = `
-      <a
-        class="venobox-obra"
-        data-gall="filtro-${serie.id}"
-        data-title="${obra.titulo} (${obra.anio}) — ${obra.descripcion}"
-        href="${obra.imagen}">
+          <a
+            class="venobox-obra"
+            data-gall="filtro-${serie.id}"
+            data-title="${obra.titulo} (${obra.anio}) — ${obra.descripcion}"
+            href="${obra.imagen}">
 
-        <img src="${obra.imagen}" alt="${obra.titulo}"/>
-      </a>
-      <h2>${obra.titulo}</h2>
-      <p>${obra.autora} (${obra.anio})</p>
-      <p>${obra.descripcion}</p>
-      <button type="button" class="btn-ir-carrusel">Abrir en carrusel</button>
-    `;
+            <img src="${obra.imagen}" alt="${obra.titulo}" />
+          </a>
+          <h2 class="titulo-galeria">${obra.titulo}</h2>
+          <p class="texto-galeria">${obra.autora} (${obra.anio})</p>
+          <p class="texto-galeria">${obra.descripcion}</p>
+          <button type="button" class="btn-ir-carrusel">Abrir en carrusel</button>
+        `;
 
         item.querySelector(".btn-ir-carrusel").addEventListener("click", () => {
             abrirCarrusel(serie, indice);

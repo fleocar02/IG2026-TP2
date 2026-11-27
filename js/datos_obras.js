@@ -40,7 +40,7 @@ export const seriesGaleria = [
         id: "dibujo-1",
         titulo: "Dibujo espiritual / automático, n.º 1 (De Fem)",
         autora: "Colectivo De Fem (Hilma af Klint, Anna Cassel, Cornelia Cederberg, Sigrid Hedman, Mathilda Nilsson)",
-        anio: "c. 1896-1907",
+        anio: "1896-1907",
         imagen: `${RUTA_IMG}dibujos_espirituales_01.jpg`,
         descripcion: "Obra sobre papel surgida en las sesiones espiritistas semanales del grupo De Fem ('Las Cinco'). Explora formas orgánicas concéntricas mediante trazos guiados sin intervención del control racional académico (Art Gallery of NSW)."
       },
@@ -48,7 +48,7 @@ export const seriesGaleria = [
         id: "dibujo-2",
         titulo: "Dibujo espiritual / automático, n.º 2 (De Fem)",
         autora: "Colectivo De Fem",
-        anio: "c. 1896-1907",
+        anio: "1896-1907",
         imagen: `${RUTA_IMG}dibujos_espirituales_02.jpg`,
         descripcion: "Composición ovalada en lápiz y acuarela sobre papel creada durante las prácticas colectivas de mediumnidad, antecedente directo del vocabulario biomórfico posterior de Af Klint (Art Gallery of NSW)."
       },
@@ -56,7 +56,7 @@ export const seriesGaleria = [
         id: "dibujo-3",
         titulo: "Dibujo espiritual / automático, n.º 3 (De Fem)",
         autora: "Colectivo De Fem",
-        anio: "c. 1896-1907",
+        anio: "1896-1907",
         imagen: `${RUTA_IMG}dibujos_espirituales_03.jpg`,
         descripcion: "Estudio simétrico sobre papel de las sesiones de De Fem, donde la geometría embrionaria y las líneas continuas registran mensajes simbólicos recibidos en trance (Guggenheim Bilbao)."
       }
