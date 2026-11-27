@@ -41,6 +41,8 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 #contenedor-filtros button {
@@ -51,6 +53,7 @@
   color: inherit;
   font: inherit;
   font-size: 0.88rem;
+  min-height: 40px;
   cursor: pointer;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
@@ -78,6 +81,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -95,6 +100,7 @@
   justify-content: space-between;
   padding-bottom: 0.9rem;
   background: #ffffff;
+  min-width: 0;
 }
 
 .btn-abrir-serie {
@@ -125,6 +131,7 @@
   margin: 0 0.95rem 0.35rem;
   font-size: 1.02rem;
   line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .texto-galeria {
@@ -132,6 +139,7 @@
   font-size: 0.88rem;
   line-height: 1.45;
   opacity: 0.85;
+  overflow-wrap: anywhere;
 }
 
 .btn-ir-carrusel {
@@ -160,6 +168,8 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px;
   background: #ffffff;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 #panel-carrusel[hidden] {
@@ -176,6 +186,7 @@
 
 #titulo-serie-carrusel {
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 #marco-carrusel {
@@ -191,6 +202,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 #imagen-carrusel {
@@ -208,6 +221,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+  max-height: 65%;
+  overflow-y: auto;
   padding: 0.9rem 1.15rem;
   background: rgba(255, 250, 242, 0.94);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -222,6 +237,7 @@
   margin: 0 0 0.35rem;
   font-size: 0.9rem;
   line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
 .ficha-carrusel-texto:last-child {
@@ -262,6 +278,26 @@
 
 #enlace-venobox:hover {
   background: rgba(61, 122, 184, 0.08);
+}
+
+@media (max-width: 767px) {
+  #contenedor-filtros {
+    gap: 0.6rem 0.5rem;
+  }
+
+  #contenedor-galeria img {
+    height: 190px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #contenedor-galeria {
+    gap: 1rem;
+  }
+
+  #contenedor-galeria img {
+    height: 200px;
+  }
 }
 
 @media (max-width: 576px) {
