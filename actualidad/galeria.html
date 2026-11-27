@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería — Las Cinco</title>
+    <!--VenoBox CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/venobox@2/dist/venobox.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>La Galería</h1>
+        <p>Seis series curadas: hacé clic en una carátula para abrir su carrusel o filtrá por serie.</p>
+    </header>
+
+    <main>
+        <section aria-label="Filtrar por serie">
+            <div id="contenedor-filtros"></div>
+        </section>
+
+        <p id="estado-vista" aria-live="polite"></p>
+
+        <section id="contenedor-galeria"></section>
+
+        <section id="panel-carrusel" hidden aria-label="Carrusel de la serie">
+            <div>
+                <h2 id="titulo-serie-carrusel"></h2>
+                <span id="contador-carrusel"></span>
+                <button type="button" id="btn-cerrar-carrusel">Cerrar carrusel</button>
+            </div>
+
+            <div id="marco-carrusel">
+                <img id="imagen-carrusel" src="" alt="" />
+                <div id="ficha-carrusel" hidden>
+                    <h3 id="titulo-obra-carrusel"></h3>
+                    <p id="meta-obra-carrusel"></p>
+                    <p id="descripcion-obra-carrusel"></p>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="btn-anterior-obra">Anterior</button>
+                <button type="button" id="btn-siguiente-obra">Siguiente</button>
+                <button type="button" id="btn-toggle-descripcion">Ver / ocultar descripción</button>
+                <a id="enlace-venobox" class="venobox-carrusel" data-gall="serie-activa" href="#">
+                    Ampliar
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--VenoBox JS-->
+    <script src="https://cdn.jsdelivr.net/npm/venobox@2/dist/venobox.min.js"></script>
+    <script type="module" src="../js/galeria.js"></script>
+</body>
+
+</html>
