@@ -5,20 +5,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Las Cinco</h1>
-<!--        <nav>
-            </nav> -->
+    <header class="barra-navegacion">
+      <nav class="navbar" aria-label="Barra de Navegación">
+        <div class="container-fluid px-3">
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNavegacion"
+            aria-controls="menuNavegacion"
+            aria-expanded="false"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse w-100" id="menuNavegacion">
+            <ul class="navbar-nav me-auto text-start">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <button
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="menu"
+                  type="button"
+                  aria-expanded="false"
+                >
+                  Colectivo
+                </button>
+                <ul class="menu">
+                  <a class="menu-item" href="colectivo/index.html"
+                    >Perfil Biográfico de Las Cinco</a
+                  >
+                  <a class="menu-item" href="colectivo/misticismo.html"
+                    >Misticismo, Esoterismo y Arte</a
+                  >
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="menu"
+                  type="button"
+                >
+                  Hilma af Klint
+                </button>
+                <ul class="menu">
+                  <a class="menu-item" href="biografia/index.html">Biografía</a>
+                  <a class="menu-item" href="biografia/su-obra.html">Su obra</a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="menu"
+                  type="button"
+                >
+                  Actualidad
+                </button>
+                <ul class="menu">
+                  <a class="menu-item" href="actualidad/index.html">Las controversias</a>
+                  <a class="menu-item" href="actualidad/discusiones.html"
+                    >Discusiones e Investigaciones actuales</a
+                  >
+                  <a class="menu-item" href="actualidad/galeria.html">Galería</a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="creditos.html">Créditos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1>Formulario de Contacto</h1>
+      <p>Consultas sobre el colectivo De Fem, investigación o muestras.</p>
     </header>
 
-    <main>
-        <h2>Contacto</h2>
-        <p>Consultas sobre el colectivo De Fem, investigación o muestras.</p>
 
-<!--Utilizo de referencia el ejemplo de formularios provisto por la cátedra-->
+<main>
+    <!--Utilizo de referencia el ejemplo de formularios provisto por la cátedra-->
         <form id="formulario" method="post" action="#" novalidate>
             <fieldset>
                 <legend>Datos de contacto</legend>
